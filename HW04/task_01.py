@@ -3,6 +3,7 @@ __author__ = 'Крымов Иван'
 import cProfile
 import timeit
 
+
 # В диапазоне натуральных чисел от 2 до 99 определить,
 # сколько из них кратны каждому из чисел в диапазоне от 2 до 9.
 
@@ -29,6 +30,7 @@ def func_1():
 
 """
 
+
 # вариант 2
 def func_2():
     frequency = [0] * 8
@@ -39,6 +41,7 @@ def func_2():
 
     for i, item in enumerate(frequency, start=2):
         return f'Числу {i} кратно {item} чисел'
+
 
 s2 = """
 
@@ -54,17 +57,19 @@ def func_2():
 
 """
 
+
 # вариант 3
 def func_3():
-    a = [0]*8
-    for i in range(2,100):
-        for j in range(2,10):
-            if i%j == 0:
-                a[j-2] += 1
+    a = [0] * 8
+    for i in range(2, 100):
+        for j in range(2, 10):
+            if i % j == 0:
+                a[j - 2] += 1
     i = 0
     while i < len(a):
-        return f'{i+2}  -  {a[i]}'
+        return f'{i + 2}  -  {a[i]}'
         i += 1
+
 
 s3 = """
 
@@ -87,7 +92,6 @@ cProfile.run('func_2()')
 print(timeit.timeit(s2, number=100))
 cProfile.run('func_3()')
 print(timeit.timeit(s3, number=100))
-
 
 # /usr/local/bin/python3.7 /Users/ikrymov/Desktop/GeekBrains.Mail.ru/Python.DataStructure/HW04/task_01.py
 #          4 function calls in 0.000 seconds
