@@ -42,8 +42,3 @@ print(prime(1))
 #cProfile.run('prime(5000)')     # 0.062
 #cProfile.run('prime(10000)')    # 0.168
 
-
-# 100 loops, best of 3: 20.4 usec per loop      10
-# 100 loops, best of 3: 459 usec per loop       100
-# 100 loops, best of 3: 9.37 msec per loop      1000
-# 100 loops, best of 3: 203 msec per loop       10000

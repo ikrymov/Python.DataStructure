@@ -54,19 +54,13 @@ def test_prime(func):
         print(f'Test {i} OK')
 
 
-test_prime(prime)
+#test_prime(prime)
 print(prime(10))
-# cProfile.run('prime(10)')
-# cProfile.run('prime(100)')
-# cProfile.run('prime(1000)')
-# cProfile.run('prime(2500)')
-# cProfile.run('prime(5000)')
-# cProfile.run('prime(10000)')
+#cProfile.run('prime(10)')    # 0.000
+#cProfile.run('prime(100)')   # 0.000
+#cProfile.run('prime(1000)')  # 0.004
+#cProfile.run('prime(2500)')  # 0.039
+#cProfile.run('prime(5000)')  # 0.040
+#cProfile.run('prime(10000)') # 0.385
+#cProfile.run('prime(1000000)') # 44.387
 
-# 100 loops, best of 3: 22.6 usec per loop      10
-# 100 loops, best of 3: 256 usec per loop       100
-# 100 loops, best of 3: 2.9 msec per loop       1000
-# 100 loops, best of 3: 414 msec per loop       10000
-
-# 100 loops, best of 3: 30.9 msec per loop      9590
-# 100 loops, best of 3: 376 msec per loop       9594
