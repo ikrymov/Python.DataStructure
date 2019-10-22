@@ -15,7 +15,7 @@ mn = min(arr)
 mx = max(arr)
 imn = arr.index(mn)
 imx = arr.index(mx)
-print('arr[%d]=%d arr[%d]=%d' % (imn + 1, mn, imx + 1, mx))
+print("Минимальное число в массиве это число {}, а максимальное число в массиве - это число {}".format(arr[imn],arr[imx]))
 
 arr[imn], arr[imx] = arr[imx], arr[imn]
 
