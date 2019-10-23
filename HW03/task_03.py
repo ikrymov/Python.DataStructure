@@ -8,12 +8,15 @@ N = 15
 arr = [0] * N
 for i in range(N):
     arr[i] = int(random() * 100)
-    print(arr[i], end=' ')
-print()
+
+print(arr)
 
 mn = min(arr)
 mx = max(arr)
 imn = arr.index(mn)
 imx = arr.index(mx)
-print('arr[%d]=%d arr[%d]=%d' % (imn + 1, mn, imx + 1, mx))
+print("Минимальное число в массиве это число {}, а максимальное число в массиве - это число {}".format(arr[imn],arr[imx]))
+
 arr[imn], arr[imx] = arr[imx], arr[imn]
+
+print(arr)
